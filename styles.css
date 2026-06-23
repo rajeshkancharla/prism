@@ -1409,7 +1409,10 @@ h3 {
   }
 
   .founder-cards article:nth-child(2) img {
-    object-position: center 18%;
+    height: 340px;
+    background: #f7f9f7;
+    object-fit: contain;
+    object-position: center center;
   }
 
   .portrait-stack {
