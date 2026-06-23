@@ -37,7 +37,15 @@
 
     <main>
       <section class="hero" aria-label="Prism Realty introduction">
-        <img class="hero-image" src="assets/prism-realty-hero.png" alt="Leafy North Shore home at dusk" />
+        <img
+          class="hero-image"
+          src="assets/prism-realty-hero.png"
+          width="1536"
+          height="1024"
+          alt="Leafy North Shore home at dusk"
+          fetchpriority="high"
+          decoding="async"
+        />
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-content">
           <p class="eyebrow">Founder-led property advisory for Sydney's North Shore</p>
@@ -181,14 +189,14 @@
         </div>
         <div class="founder-cards" aria-label="Founders">
           <article>
-            <img src="Smitha.jpeg" alt="Smitha Arcot" />
+            <img src="Smitha.jpeg" width="1464" height="1600" alt="Smitha Arcot" loading="lazy" decoding="async" />
             <div>
               <h3>Smitha Arcot</h3>
               <p>Founder and property advisor</p>
             </div>
           </article>
           <article>
-            <img src="Priyanka.jpeg" alt="Priyanka Rana" />
+            <img src="Priyanka.jpeg" width="900" height="1599" alt="Priyanka Rana" loading="lazy" decoding="async" />
             <div>
               <h3>Priyanka Rana</h3>
               <p>Founder and property advisor</p>
@@ -243,6 +251,10 @@
           <label>
             Email
             <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" autocomplete="tel" placeholder="Your phone number" />
           </label>
           <label>
             I am interested in
